@@ -16,13 +16,13 @@ const LandingPage = () => {
   const apiKey = "bb5872cb";
 
   const getMoviesByName = async (name) => {
-    const url = `http://www.omdbapi.com/?apikey=${apiKey}&t=${name}`;
+    const url = `//www.omdbapi.com/?apikey=${apiKey}&t=${name}`;
     const response = await axios.get(url);
     setMovie(response.data);
   };
 
   const getMoviesById = async (id) => {
-    const url = `http://www.omdbapi.com/?apikey=${apiKey}&i=${id}`;
+    const url = `//www.omdbapi.com/?apikey=${apiKey}&i=${id}`;
     const response = await axios.get(url);
     setMovie(response.data);
   };
